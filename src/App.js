@@ -7,9 +7,8 @@ import "./App.css";
 
 function App() {
   return (
-    <div className="app">
-      <header>Solace's Progress Blog</header>
-
+    <>
+      <header>Team Solace | Progress Blog!</header>
       <Routes>
         <Route
           path="/"
@@ -23,9 +22,8 @@ function App() {
         />
         <Route path="/post/:id" element={<PostPage />} />
       </Routes>
-
       <footer>Footer</footer>
-    </div>
+    </>
   );
 }
 
