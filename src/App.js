@@ -20,6 +20,23 @@ function App() {
           </nav>
         </div>
       </header>
+      <section className="hero">
+        <div className="hero-image">
+          <img src={process.env.PUBLIC_URL + "/post-images/catTest.png"} alt="Team Solace Hero" />
+        </div>
+        <div className="hero-content">
+          <h2>Welcome Solace's Progress Blog</h2>
+          <p>Follow our journey as we change healthcare for tradespeople.</p>
+          <div className="hero-cta">
+            <button 
+              className="cta-button" 
+              onClick={() => document.querySelector('.post-list').scrollIntoView({ behavior: 'smooth' })}
+            >
+              Explore Our Blog
+            </button>
+          </div>
+        </div>
+      </section>
       <Routes>
         <Route
           path="/"
@@ -34,7 +51,7 @@ function App() {
         <Route path="/post/:id" element={<PostPage />} />
       </Routes>
       <footer>
-        <h3>Meet Our Team</h3>
+        <h3>Connect With Us</h3>
         <div className="team-members">
           <div className="team-member">
             <a href="https://linkedin.com/in/sarah-wang" target="_blank" rel="noopener noreferrer">
