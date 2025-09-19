@@ -11,11 +11,41 @@ function App() {
       <header>
         <div className="header-content">
           <div className="logo">
-            <h1>Team Solace</h1>
+            <h1>Solace</h1>
           </div>
           <nav className="main-nav">
-            <a href="#blog" className="nav-link">Blog</a>
-            <a href="#about" className="nav-link">About</a>
+            <a 
+              href="#blog" 
+              className="nav-link"
+              onClick={(e) => {
+                e.preventDefault();
+                const element = document.querySelector('.post-list');
+                const elementPosition = element.offsetTop;
+                const offsetPosition = elementPosition - 200;
+                window.scrollTo({
+                  top: offsetPosition,
+                  behavior: 'smooth'
+                });
+              }}
+            >
+              Blog
+            </a>
+            <a 
+              href="#about" 
+              className="nav-link"
+              onClick={(e) => {
+                e.preventDefault();
+                const element = document.querySelector('.about');
+                const elementPosition = element.offsetTop;
+                const offsetPosition = elementPosition - 200;
+                window.scrollTo({
+                  top: offsetPosition,
+                  behavior: 'smooth'
+                });
+              }}
+            >
+              About
+            </a>
             <a href="#team" className="nav-link">Team</a>
           </nav>
         </div>
@@ -34,6 +64,28 @@ function App() {
             >
               Explore Our Blog
             </button>
+          </div>
+        </div>
+      </section>
+      <section className="about">
+        <div className="about-content">
+          <h2>About Solace</h2>
+          <p className="about-description">
+            Solace is an app that helps tradespeople build a healthier lifestyle by focusing on simple ways to improve their wellbeing. We aim to help tradespeople work stronger and healthier without relying on harmful coping mechanisms. Through simple check-ins and personalized exercises, Solace is a lifestyle assistant to tradesworkers.
+          </p>
+          <div className="about-features">
+            <div className="feature">
+              <h3>Simple Check-ins</h3>
+              <p>Easy daily assessments to track your wellbeing and progress</p>
+            </div>
+            <div className="feature">
+              <h3>Personalized Exercises</h3>
+              <p>Customized routines designed specifically for tradespeople</p>
+            </div>
+            <div className="feature">
+              <h3>Healthy Lifestyle</h3>
+              <p>Build sustainable habits that support your physical and mental health</p>
+            </div>
           </div>
         </div>
       </section>
