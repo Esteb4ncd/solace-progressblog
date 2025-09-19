@@ -16,6 +16,22 @@ function App() {
             <h1>Solace</h1>
           </div>
           <nav className="main-nav">
+          <a 
+              href="#about" 
+              className="nav-link"
+              onClick={(e) => {
+                e.preventDefault();
+                const element = document.querySelector('.about');
+                const elementPosition = element.offsetTop;
+                const offsetPosition = elementPosition - 200;
+                window.scrollTo({
+                  top: offsetPosition,
+                  behavior: 'smooth'
+                });
+              }}
+            >
+              About
+            </a>
             <a 
               href="#blog" 
               className="nav-link"
@@ -33,11 +49,11 @@ function App() {
               Blog
             </a>
             <a 
-              href="#about" 
+              href="#team" 
               className="nav-link"
               onClick={(e) => {
                 e.preventDefault();
-                const element = document.querySelector('.about');
+                const element = document.querySelector('.team');
                 const elementPosition = element.offsetTop;
                 const offsetPosition = elementPosition - 200;
                 window.scrollTo({
@@ -46,9 +62,8 @@ function App() {
                 });
               }}
             >
-              About
+              Team
             </a>
-            <a href="#team" className="nav-link">Team</a>
           </nav>
         </div>
       </header>
@@ -117,6 +132,7 @@ function App() {
           </div>
         </div>
       </section>
+    
       <footer>
         <div className="copyright">
           © 2025 Team Solace. All rights reserved.
