@@ -1,8 +1,10 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import posts from "./posts";
+import teamMembers from "./teamData";
 import PostCard from "./components/PostCard";
 import PostPage from "./components/PostPage";
+import TeamMember from "./components/TeamMember";
 import "./App.css";
 
 function App() {
@@ -102,43 +104,20 @@ function App() {
         />
         <Route path="/post/:id" element={<PostPage />} />
       </Routes>
-      <footer>
-        <h3>Connect With Us</h3>
-        <div className="team-members">
-          <div className="team-member">
-            <a href="https://linkedin.com/in/sarah-wang" target="_blank" rel="noopener noreferrer">
-              Sarah Wang
-            </a>
-          </div>
-          <div className="team-member">
-            <a href="https://linkedin.com/in/esteban-cd" target="_blank" rel="noopener noreferrer">
-              Esteban Cruz Dominguez
-            </a>
-          </div>
-          <div className="team-member">
-            <a href="https://linkedin.com/in/mateusz-m" target="_blank" rel="noopener noreferrer">
-              Mateusz Matyskiewicz  
-            </a>
-          </div>
-          <div className="team-member">
-            <a href="https://linkedin.com/in/angel-h" target="_blank" rel="noopener noreferrer">
-              Angel Hsieh
-            </a>
-          </div>
-          <div className="team-member">
-            <a href="https://linkedin.com/in/rosie-l" target="_blank" rel="noopener noreferrer">
-              Rosie Lee
-            </a>
-          </div><div className="team-member">
-            <a href="https://linkedin.com/in/hyunjung-s" target="_blank" rel="noopener noreferrer">
-              Hyunjung Shin
-            </a>
-          </div><div className="team-member">
-            <a href="https://linkedin.com/in/zinna-k" target="_blank" rel="noopener noreferrer">
-              Zinna Kim
-            </a>
+      <section className="team">
+        <div className="team-content">
+          <h2>Meet Our Team</h2>
+          <p className="team-description">
+            The passionate individuals behind Solace, working together to improve healthcare for tradespeople.
+          </p>
+          <div className="team-grid">
+            {teamMembers.map((member) => (
+              <TeamMember key={member.id} member={member} />
+            ))}
           </div>
         </div>
+      </section>
+      <footer>
         <div className="copyright">
           © 2025 Team Solace. All rights reserved.
         </div>
