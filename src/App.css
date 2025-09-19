@@ -46,29 +46,26 @@ body {
 }
 
 header {
-  background: linear-gradient(135deg, var(--dark-blue) 0%, var(--medium-blue) 100%);
+  background: var(--dark-blue);
   color: white;
-  text-align: center;
-  padding: var(--spacing-lg) var(--spacing-md);
+  padding: var(--spacing-md) 0;
   box-shadow: var(--shadow-md);
   position: relative;
   overflow: hidden;
 }
 
-header::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="white" opacity="0.1"/><circle cx="75" cy="75" r="1" fill="white" opacity="0.1"/><circle cx="50" cy="10" r="0.5" fill="white" opacity="0.1"/><circle cx="10" cy="60" r="0.5" fill="white" opacity="0.1"/><circle cx="90" cy="40" r="0.5" fill="white" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
-  opacity: 0.3;
+.header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 var(--spacing-md);
 }
 
-header h1 {
+.logo h1 {
   font-family: var(--font-heading);
-  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-size: 2rem;
   font-weight: 700;
   margin: 0;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
@@ -76,8 +73,8 @@ header h1 {
   z-index: 1;
 }
 
-header .subtitle {
-  font-size: clamp(1rem, 2.5vw, 1.25rem);
+.logo .subtitle {
+  font-size: 1rem;
   font-weight: 400;
   margin-top: var(--spacing-xs);
   opacity: 0.9;
@@ -85,11 +82,35 @@ header .subtitle {
   z-index: 1;
 }
 
+.main-nav {
+  display: flex;
+  gap: var(--spacing-lg);
+  position: relative;
+  z-index: 1;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.1rem;
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-radius: var(--radius-sm);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.nav-link:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+}
+
 /* Main Content */
 main.post-list {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, auto);
+  gap: var(--spacing-lg);
   padding: var(--spacing-xl) var(--spacing-md);
   flex: 1;
   max-width: 1200px;
@@ -102,15 +123,14 @@ main.post-list {
   background: white;
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-md);
-  width: 100%;
-  max-width: 800px;
-  margin: var(--spacing-md) 0;
   padding: var(--spacing-lg);
   text-align: left;
   transition: all 0.3s ease;
   border: 1px solid rgba(24, 58, 96, 0.1);
   position: relative;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 .post-card:hover {
@@ -120,22 +140,24 @@ main.post-list {
 
 .post-card h2 {
   font-family: var(--font-heading);
-  font-size: 1.75rem;
-  font-weight: 600;
+  font-size: 1.5rem;
+  font-weight: 700;
   color: var(--dark-blue);
   margin: 0 0 var(--spacing-sm) 0;
   line-height: 1.3;
 }
 
 .post-card p {
-  color: #666;
+  color: #333;
   margin: 0 0 var(--spacing-md) 0;
-  font-size: 1rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  flex-grow: 1;
 }
 
 .post-card img {
   width: 100%;
-  height: 200px;
+  height: 150px;
   object-fit: cover;
   border-radius: var(--radius-md);
   margin: var(--spacing-sm) 0;
@@ -143,26 +165,34 @@ main.post-list {
 
 .post-card a {
   text-decoration: none;
-  color: var(--medium-blue);
-  font-weight: 600;
-  font-size: 1rem;
+  color: var(--orange);
+  font-weight: 700;
+  font-size: 0.9rem;
   display: inline-flex;
   align-items: center;
   gap: var(--spacing-xs);
   transition: color 0.3s ease;
+  margin-top: auto;
 }
 
 .post-card a:hover {
-  color: var(--orange);
+  color: #ff9500;
 }
 
 .post-card a::after {
-  content: '→';
+  content: '≫';
   transition: transform 0.3s ease;
 }
 
 .post-card a:hover::after {
   transform: translateX(4px);
+}
+
+.post-card .author-date {
+  margin-top: var(--spacing-sm);
+  font-size: 0.85rem;
+  color: #888;
+  font-weight: 500;
 }
 
 /* Post Page Styles */
@@ -224,7 +254,7 @@ main.post-list {
 
 /* Footer Styles */
 footer {
-  background: linear-gradient(135deg, var(--dark-blue) 0%, var(--medium-blue) 100%);
+  background: var(--dark-blue);
   color: white;
   padding: var(--spacing-xl) var(--spacing-md);
   text-align: center;
@@ -282,4 +312,3 @@ footer .copyright {
   position: relative;
   z-index: 1;
 }
-

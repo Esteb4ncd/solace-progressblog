@@ -9,8 +9,16 @@ function App() {
   return (
     <>
       <header>
-        <h1>Team Solace</h1>
-        <div className="subtitle">Progress Blog</div>
+        <div className="header-content">
+          <div className="logo">
+            <h1>Team Solace</h1>
+          </div>
+          <nav className="main-nav">
+            <a href="#blog" className="nav-link">Blog</a>
+            <a href="#about" className="nav-link">About</a>
+            <a href="#team" className="nav-link">Team</a>
+          </nav>
+        </div>
       </header>
       <Routes>
         <Route
@@ -63,7 +71,7 @@ function App() {
           </div>
         </div>
         <div className="copyright">
-          © 2024 Team Solace. All rights reserved.
+          © 2025 Team Solace. All rights reserved.
         </div>
       </footer>
     </>
