@@ -39,7 +39,7 @@ function PostCard({ post }) {
     <div className="post-card">
       <img src={post.image} alt={post.header} />
       <h2>{post.header}</h2>
-      <p>{previewText}</p>
+      {/* <p>{previewText}</p> */}
       <Link to={`/post/${post.id}`}>READ MORE</Link>
       <div className="author-date">
         {post.author || 'Team Solace'} • {formatDate(post.date)}

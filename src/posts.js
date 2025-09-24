@@ -1,82 +1,55 @@
 const posts = [
     {
       id: 1,
-      header: "Test Post",
-      date: "2025-09-13",
+      header: "Week 1 Update: Pitching, Planning, and Progress: Solace Begins!",
+      date: "2025-09-05",
       author: "Sarah Wang",
-      description: `This? I love Duloc, first of all. Very clean. -What are you doing here? -Really, it's
-rude enough being alive, when no one wants you. But showing up uninvited to a wedding... -Fiona! I
-need to talk to you. -Oh, now you wanna talk? Well it's a little late for that. So if you'll excuse me.
--But you can't marry him! -And why not? Because, because he's just marrying you so he can be
-king. -Outrageous! Fiona, don't listen to him. -He's not your true love. -What do you know about
-true love? -Well, I ...I'm in... Oh, this is precious. The Ogre has fallen in love with the princess.
-Laugh. Shrek. Is this true? Who cares. It's preposterious. Fiona, my love, we gonna kiss away for
-our happily ever after. Now kiss me! By night one way, by day another. I wanted to show you before.
-Well. That explains a lot. Oh. It's disgusting. Guards, guards. I order you to get them out of my sight.
--Now! Get them! Get them, both! -No! This marriage is minding, and that makes me king. See? See?
--Shrek! -No. -Don't just stand there, you dogs. -Get out of my way. No! Shrek! -And as for you my
-wife. -Fiona! I'll have you locked back in that tower for the rest of your days! I will have order. I will
-have potential. I will have... All right, nobody move! I got a dragon here and I'm not afraid to use it.
-I'm a donkey on the edge! Celebrity marriages. They never last, do they? Go ahead Shrek. -Fiona?
--Yes, Shrek? I love you. Really? Really, really. I love you too. A time for true love's first kiss... Fiona?
-Fiona? Are you all right? Yes. But I don't understand. I'm supposed to be beautiful. But you are
-beautiful. I was hoping this would be a happy ending. God bless us, everyone.
-Send this
-to your
-friend `,
-      image: process.env.PUBLIC_URL + "/post-images/catTest.png"
+      description: `
+      <h2>Introduction</h2>
+<p>We’re thrilled to announce that Solace has been selected as one of the ten projects to pitch this term! After the selection, Sarah and Esteban came together to form the team, bringing together a group of creative and dedicated members ready to bring this vision to life.</p>
+
+
+<h2>Meet the Team</h2>
+<ul>
+<li><strong>Sarah</strong> – Project Manager, Frontend Developer, Co-Product Owner</li>
+<li><strong>Esteban</strong> – Lead Developer, Co-Product Owner</li>
+<li><strong>Mateusz</strong> – Lead Designer</li>
+<li><strong>Rosie</strong> – UI/UX Designer, Scrum Master</li>
+<li><strong>Hyunjung</strong> – Brand Designer</li>
+<li><strong>Angel</strong> – UI/UX Designer</li>
+<li><strong>Zinna</strong> – AI & Backend Developer</li>
+</ul>
+
+
+<h2>Laying the Foundation</h2>
+<p>Once our team was set, we gathered to get familiar with the idea behind Solace and ensure everyone was aligned. This first conversation gave us the chance to share perspectives, ask questions, and start shaping the direction of the project together.</p>
+
+
+<h2>Sprint One: First Steps</h2>
+<p>With the vision clear, we kicked off our first sprint. Everyone jumped into action: research began, sketches of early features started to form, and the first design ideas began to emerge. Here’s how we got started:</p>
+<ul>
+<li>Zinna explored APIs</li>
+<li>Sarah and Rosie carried out a competitive analysis using Wim’s template</li>
+<li>Esteban began setting up our blog</li>
+<li>Rosie, Rachel, Angel, and Mateusz brainstormed features and drafted rough sketches</li>
+<li>Mateusz and Rachel worked on early logo concepts</li>
+<li>Sarah began user research</li>
+</ul>
+
+
+<h2>Keeping on Track</h2>
+<p>To stay organized and connected, we’ve set our weekly meetings for <strong>Mondays at 11:30 AM</strong>. These meetings give us a regular space to share progress, adjust priorities, and keep momentum strong.</p>
+
+
+<h2>Looking Ahead</h2>
+<p>The first sketches and research are already taking shape, and the energy in the team is building. We’re just at the beginning, but Solace is already moving from idea to reality—and we couldn’t be more excited to see where this journey takes us.</p>
+
+
+<p class="signature">Suffering, but make it agile,<br><br><br>— Sarah &amp; The Solace Team</p>
+</article> `,
+      image: process.env.PUBLIC_URL + "/post-images/introWeekImage.png"
     },
-    {
-        id: 2,
-        header: "Test Post",
-        date: "2025-09-13",
-        description: `This is a description for post 1 Once upon a time there was a lovely princess. But she had an enchantment upon her of a fearful
-  sort, which could only be broken by Love's first kiss. She was locked away in a castle guarded by a
-  terrible fire breathing dragon. Many brave knights had attempted to free her from this dreadful
-  prison, but none prevailed. She waited in the dragon's keep in the highest room of the tallest tower
-  for her true love and true love's first kiss. Like that's ever going to happen. What a loony. Shrek
-  Beware Stay out I think he's in here. All right. Lets get it! Hold on. Do you know what that thing can
-  do to you? Yeah. He'll groan into your bones for his brains. Well actually that would be a giant. Now
-  Ogres, huh, they are much worse. They'll make a soup from your freshly peeled skin. They'll chew
-  your livers, squeeze the jelly from your eyes. Actually, it's quite good on toast. Back, back beast,
-  back! I warned you! Right. This is the part, where you run away. Yeah! And stay out. Wanted.
-  Fairytale creatures. Right, this one is full. Take it away. Give me that. Your fine days are over. -25
-  pieces of silver for the witch. Next. -Come on. Sit down there! And be quiet! This cage is so small.
-  You wouldn't turn me in. I'll never be stubborn again. I can change. Please, give me another chance.
-  Oh, shut up! Next. What do we got? This little wooden puppet. I'm not a puppet, I'm a real boy. Five
-  shillings for the possessed toy. Take it away. No! Please, don't let them do it! Next. What do you
-  got? Well, I've got a talking donkey! Right. Well that's good for ten schillings, if you can prove it. Oh,
-  go ahead fella. Well? He's just a li..., just a little nervous. He's really quite a chatterbox. You
-  boneheaded donkey! That's it. I have heard enough. Guards! No, no, he talks, he does! I can talk. I
-  love to talk. I've talked to... Get her out of my sight! -No, no, I swear! Hey, I can fly. -He can fly! -He
-  can fly! He can talk! -That's right, fool! Now I'm a flying, talking donkey! You might have seen house
-  fly, maybe even a superfly. But I bet you ain't never seen a donkey fly! Seize him! Get him! This way!
-  Hurry! You there. Ogre. -I. By the order of lord Farquaad. I am authorized to place you both under
-  arrest. And transport you to designated resettlement facility. Oh really? You and what army? Can I
-  say something to you? Listen, you were really, really something, back there. Incredible. Are you
-  talking to... ...me? Yes, I was talking to you. Can I just tell you that you were really great back there
-  with those guards. They thought that was all over there. And then you showed up and BAM. There
-  was tripping on over themselves like babes in the woods. That really made me feel good to see that.
-  Oh, that's great. Really. Man, it's good to be free. Now, why don't you go celebrate your freedom
-  with your own friends? But I... I don't have any friends. And I'm not going out there by myself. Hey
-  wait a minute. I have a great idea... I'll stick with you. You and me in green fighting machine.
-  Together we'll scare the spin if anybody crosses us. Oh, a, that was really scary. Maybe you don't
-  mine me saying. If that don't work, your breath will certainly do the job done, 'cause... you
-  definitively need some tic-tac or something, 'cause your breath stinks! Man you've ??? my note!
-  Just like the time... ...and then I ate some rotten berries. Man I had some strong gases leaking out of
-  my but that day. Why are you following me? I'll tell you why. 'Cause I'm all alone, there is no one
-  here, beside me. My problems have all gone. There's no one to derive me. But you got to have
-  free ... -ave you locked back in that tower for the rest of your days! I will have order. I will
-  have potential. I will have... All right, nobody move! I got a dragon here and I'm not afraid to use it.
-  I'm a donkey on the edge! Celebrity marriages. They never last, do they? Go ahead Shrek. -Fiona?
-  -Yes, Shrek? I love you. Really? Really, really. I love you too. A time for true love's first kiss... Fiona?
-  Fiona? Are you all right? Yes. But I don't understand. I'm supposed to be beautiful. But you are
-  beautiful. I was hoping this would be a happy ending. God bless us, everyone.
-  Send this
-  to your
-  friend `,
-        image: process.env.PUBLIC_URL + "/post-images/catTest.png"
-      },{
+   {
       id: 3,
       header: "Week 2 Update: Logos, Features, and Mentor Wisdom",
       date: "2025-09-16",
