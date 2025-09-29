@@ -116,7 +116,7 @@ const posts = [
 
       <p class="signature">Testing our patience more than our features, <br/><br/>— Zinna &amp; The Solace Team</p>
     `,
-    image: process.env.PUBLIC_URL + "/post-images/week3image.jpg" //no image yet
+    image: process.env.PUBLIC_URL + "/post-images/week3Image.jpg" //no image yet
   }
 ];
 
