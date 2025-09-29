@@ -114,7 +114,7 @@ const posts = [
       <h2>Everyone’s Focus for Next Week</h2>
       <p>The entire team will finalize the User Research Report, pull the Expo repository for Sonya’s class, and continue aligning design and development with the main feature set.</p>
 
-      <p class="signature">— Zinna &amp; The Solace Team</p>
+      <p class="signature">Testing our patience more than our features, <br/><br/>— Zinna &amp; The Solace Team</p>
     `,
     image: process.env.PUBLIC_URL + "/post-images/week3image.png" //no image yet
   }
