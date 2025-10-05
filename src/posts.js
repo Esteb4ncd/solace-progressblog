@@ -116,7 +116,75 @@ const posts = [
 
       <p class="signature">Testing our patience more than our features, <br/><br/>— Zinna &amp; The Solace Team</p>
     `,
-    image: process.env.PUBLIC_URL + "/post-images/week3Image.jpg" //no image yet
+    image: process.env.PUBLIC_URL + "/post-images/week3Image.jpg"
+  },
+  {
+    id: 4,
+    header: "Week 4 Update: Building Wireframes and Shaping Features",
+    date: "2025-10-02",
+    author: "Mateusz Matyskiewicz",
+    description: `
+      <h2>Introduction</h2>
+      <p>Week 4 was all about translating research into design direction and beginning to shape our core features. With user reports completed, we moved into wireframing, style guide updates, and API exploration. Our team also refined ideas around stretches, check-ins, and gamification, while continuing to align design and development for the product’s foundation.</p>
+
+      <h2>What We Did</h2>
+      <ul>
+        <li><strong>Rosie:</strong> Arranged a meeting with Jenny from Forge, submitted the Competitive & User Report, created Sprint 3, and contributed to onboarding, check-in, and home wireframes. She also updated layout elements in the style guide and conducted additional research on muscle groups and related stretches.</li>
+        <li><strong>Sarah:</strong> Wrote the Week 1 blog post, advanced the User Research Report, and scheduled an advisor meeting.</li>
+        <li><strong>Esteban:</strong> Explored APIs, contributed to the User Research Report and its formatting, published the Week 2 blog post, and edited the survey Excel format.</li>
+        <li><strong>Zinna:</strong> Published the Week 3 blog post, worked on the User Research Report, and helped refine the survey Excel format.</li>
+        <li><strong>Mateusz:</strong> Focused on gamification wireframing and the User Research Report.</li>
+        <li><strong>Rachel:</strong> Pushed logo design forward, completed her section of the User Research Report, researched muscle group pain points and impacts on trade workers, and began wireframing the tracking feature.</li>
+      </ul>
+
+      <h2>Wireframing & Design Feedback</h2>
+      <ul>
+        <li><strong>Check-in:</strong> Clear and intuitive.</li>
+        <li><strong>Sleep & Mindfulness:</strong> Strong add-on, simple breathing/tips, optional by design.</li>
+        <li><strong>Tracking Flow:</strong> Works smoothly.</li>
+        <li><strong>Stretching:</strong> Leaning toward short standing videos rather than illustrations.</li>
+        <li><strong>Gamification:</strong> Streaks and engagement mechanics are promising.</li>
+      </ul>
+      <p>On the UI side, we’re aligning around construction-focused features with consistent styling.</p>
+
+      <h2>Main Features</h2>
+      <p>The scope feels realistic and achievable. Core areas include: check-ins, stretching support, tracking, mindfulness/sleep features, and gamification.</p>
+
+      <h2>Advisor Meeting</h2>
+      <p>We’ll follow Henry’s meeting agenda and bring updates to Jenny during Friday’s session. Next Monday, we’ll start at 10 a.m. in the study room to kick off Sprint 4 together.</p>
+      <ul>
+        <li>Monday 4:30 p.m. – Designers Design Specs Meeting (can be moved to before class if needed)</li>
+        <li>Wednesday 3–4 p.m. – Advisor meeting with Kenner</li>
+      </ul>
+
+      <h2>Next Steps</h2>
+      <ul>
+        <li><strong>Design Team:</strong> Focus on mid-fi wireframes with consistent components:
+          <ul>
+            <li>Rosie → Home & Main Stretch</li>
+            <li>Rachel → Progress</li>
+            <li>Mateusz → Gamification</li>
+            <li>Angel → Mindfulness & Sleep Support</li>
+            <li>Zinna → Happy Path & overall user flow</li>
+          </ul>
+        </li>
+        <li>Logo work will move to the backlog for now.</li>
+        <li><strong>Development Team:</strong> Practice building components in Expo:
+          <ul>
+            <li>Esteban → simple API integration</li>
+            <li>Sarah → checklist component</li>
+            <li>Zinna → Connecting Google Calendar to our Expo project</li>
+          </ul>
+        </li>
+        <li><strong>Teamwide Deliverables:</strong> Completing two user personas (Sarah & Esteban) with decorated designs by Mateusz.</li>
+      </ul>
+
+      <h2>Closing</h2>
+      <p>This week solidified our project’s foundation by turning research into actionable design and development steps. With wireframes, features, and personas underway, we’re well on our way to shaping Solace into a meaningful product for construction workers.</p>
+
+      <p class="signature">Crawling out of the hole,<br/><br/>— Mateusz &amp; The Solace Team</p>
+    `,
+    image: process.env.PUBLIC_URL + "/post-images/week4Image.png"
   }
 ];
 
