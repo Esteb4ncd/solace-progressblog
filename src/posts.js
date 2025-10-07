@@ -185,7 +185,90 @@ const posts = [
       <p class="signature">Crawling out of the hole,<br/><br/>— Mateusz &amp; The Solace Team</p>
     `,
     image: process.env.PUBLIC_URL + "/post-images/week4Image.png"
+  },
+  {
+    id: 5,
+    header: "Week 5 Update: Advisor Meeting, Building Wireframes and Logo",
+    date: "2025-10-07",
+    author: "Rosie Lee",
+    description: `
+      <h2>Introduction</h2>
+      <p>In Week 5, our design team focused on refining key features such as onboarding and daily check-ins based on insights from our advisor and instructor meetings. We also made progress on our logo design to move toward finalization. Additionally, we had another valuable advisor session with Jenny, where we gained deeper insights into our target audience—trade workers—and received feedback on our overall wireframing approach.</p>
+  
+      <h2>What We Did</h2>
+      <ul>
+        <li><strong>Rosie</strong> – Designed onboarding flow, daily check-in, and home page stretch components in mid-fi; set up the meeting with Jenny; and created initial logo sketches.</li>
+        <li><strong>Rachel</strong> – Worked on logo design, reviewed and edited personas based on rubric, and developed storyboard and script ideas.</li>
+        <li><strong>Esteban</strong> – Updated secondary user persona, contributed to blog updates, developed storytelling ideas for personas, and tested API integration in Expo.</li>
+        <li><strong>Sarah</strong> – Focused on the primary user persona, created a simple checklist component in Expo, led the advisor meeting with the agenda, researched the new target segment (ironworkers), and refined the problem statement, value proposition, and elevator pitch.</li>
+        <li><strong>Mateusz</strong> – Worked on logo design concepts and user persona layout.</li>
+        <li><strong>Angel</strong> – Built the information architecture, site map, and low-fidelity wireframes for “Sleep Help,” “Breathing,” “Mental Health Home,” and “To-Do List” pages.</li>
+        <li><strong>Zinna</strong> – Researched APIs, tested API integration in Expo, and designed the happy path flow.</li>
+        <li><strong>All</strong> – Collaborated on the site map.</li>
+      </ul>
+  
+      <h2>Wireframing & Design Feedback</h2>
+      <p>For onboarding, advisors expressed interest in push notifications to help them stay consistent despite their demanding work schedules.</p>
+      <p>For check-ins, our team’s discussion highlighted the importance of integrating the user’s work schedule to ensure a seamless experience. We plan to explore how frequently their shifts change and whether they use existing scheduling platforms. This will help us create a smoother flow. Additionally, by allowing users to log their daily tasks, our AI can suggest personalized stretches that match their specific activities.</p>
+  
+      <h2>Main Features</h2>
+      <ul>
+        <li>Daily check-ins</li>
+        <li>Stretching support</li>
+        <li>Progress tracking</li>
+        <li>Mindfulness and sleep tools</li>
+        <li>Gamification</li>
+      </ul>
+      <p>We are continuously refining these features based on feedback from both our instructor and advisor meetings.</p>
+  
+      <h2>Advisor Meeting</h2>
+      <p>Here are key insights from our recent meeting with Jenny (Advisor):</p>
+      <ul>
+        <li><strong>Tone of Voice:</strong> Serious but with humor—use memes or celebratory messages like “Hell ya, way to go!” to keep motivation high.</li>
+        <li><strong>Color Palette:</strong> Use dark tones (like black) with accent colors to create a sense of belonging—avoid clinical or “hospital” tones.</li>
+        <li><strong>Scheduling:</strong> Let users input their own schedules since their shifts vary frequently and don’t follow standard office hours.</li>
+        <li><strong>Marketing Insight:</strong> Emphasize how pain prevention through stretching is better than relying on chemical pain relief.</li>
+        <li><strong>Target Audience:</strong> Focus on ages 20–40. A younger focus may alienate the majority of the target users.</li>
+        <li><strong>Community & Stigma:</strong> There’s less stigma around discussing physical pain—many trade workers already engage in wellness activities like the gym or meditation. Encourage using the app socially.</li>
+      </ul>
+  
+      <h2>Next Steps</h2>
+      <ul>
+        <li><strong>Designers:</strong>
+          <ul>
+            <li>Style guide & fill any missing screens/components → Rosie</li>
+            <li>Update color palette → Rachel</li>
+            <li>Continue wireframing & build missing components → Rachel</li>
+            <li>Logo, mascot, user scenarios, and persona layout → Mateusz</li>
+            <li>Prototype & account page → Rachel & Angel</li>
+          </ul>
+        </li>
+        <li><strong>Developers:</strong>
+          <ul>
+            <li>Assist with prototyping and possibly wireframing → Zinna</li>
+            <li>Decide on UI library → Esteban</li>
+            <li>Research and integrate AI & API for muscle use → Esteban</li>
+            <li>Develop Sleep feature → Sarah</li>
+            <li>Develop Breathing feature → Zinna</li>
+          </ul>
+        </li>
+        <li><strong>User Research & Strategy:</strong>
+          <ul>
+            <li>Refine personas & review rubric for submission → Sarah</li>
+            <li>Write user scenarios → Sarah</li>
+            <li>Update elevator pitch based on new insights → Sarah</li>
+          </ul>
+        </li>
+      </ul>
+  
+      <h2>Closing</h2>
+      <p>Week 5 was full of progress and valuable insights. With clearer direction from our advisor, refined features, and a stronger understanding of our audience, our team is ready to move into the next phase—finalizing the style guide, completing wireframes, beginning prototyping and developing mascot and finalizing logo.</p>
+  
+      <p class="signature">Thanks for reading my TED Talk,<br/><br/>— Rosie &amp; The Solace Team</p>
+    `,
+    image: process.env.PUBLIC_URL + "/post-images/week5Image.png"
   }
+  
 ];
 
 export default posts;
