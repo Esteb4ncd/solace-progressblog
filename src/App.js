@@ -32,7 +32,7 @@ function App() {
             >
               About
             </a>
-            <a 
+            {/* <a 
               href="#blog" 
               className="nav-link"
               onClick={(e) => {
@@ -47,7 +47,33 @@ function App() {
               }}
             >
               Blog
-            </a>
+            </a> */}
+            <a 
+  href="#blog" 
+  className="nav-link"
+  onClick={(e) => {
+    e.preventDefault();
+    const element = document.querySelector('.post-list');
+    if (element) {
+      const elementPosition = element.offsetTop;
+      const offsetPosition = elementPosition - 200;
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+    } else {
+  
+      window.location.href = "/";
+      setTimeout(() => {
+        const element = document.querySelector('.post-list');
+        if (element) element.scrollIntoView({ behavior: 'smooth' });
+      }, 500);
+    }
+  }}
+>
+  Blog
+</a>
+
             <a 
               href="#team" 
               className="nav-link"
