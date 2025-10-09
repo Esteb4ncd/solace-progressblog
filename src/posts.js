@@ -197,21 +197,22 @@ const posts = [
   
       <h2>What We Did</h2>
       <ul>
-        <li><strong>Rosie</strong> – Designed onboarding flow, daily check-in, and home page stretch components in mid-fi; set up the meeting with Jenny; and created initial logo sketches.</li>
-        <li><strong>Rachel</strong> – Worked on logo design, reviewed and edited personas based on rubric, and developed storyboard and script ideas.</li>
-        <li><strong>Esteban</strong> – Updated secondary user persona, contributed to blog updates, developed storytelling ideas for personas, and tested API integration in Expo.</li>
-        <li><strong>Sarah</strong> – Focused on the primary user persona, created a simple checklist component in Expo, led the advisor meeting with the agenda, researched the new target segment (ironworkers), and refined the problem statement, value proposition, and elevator pitch.</li>
-        <li><strong>Mateusz</strong> – Worked on logo design concepts and user persona layout.</li>
-        <li><strong>Angel</strong> – Built the information architecture, site map, and low-fidelity wireframes for “Sleep Help,” “Breathing,” “Mental Health Home,” and “To-Do List” pages.</li>
-        <li><strong>Zinna</strong> – Researched APIs, tested API integration in Expo, and designed the happy path flow.</li>
-        <li><strong>All</strong> – Collaborated on the site map.</li>
+        <li><strong>Rosie:</strong> Designed onboarding flow, daily check-in, and home page stretch components in mid-fi; set up the meeting with Jenny; and created initial logo sketches.</li>
+        <li><strong>Rachel:</strong> Worked on logo design, reviewed and edited personas based on rubric, and developed storyboard and script ideas.</li>
+        <li><strong>Esteban:</strong> Updated secondary user persona, contributed to blog updates, developed storytelling ideas for personas, and tested API integration in Expo.</li>
+        <li><strong>Sarah:</strong> Focused on the primary user persona, created a simple checklist component in Expo, led the advisor meeting with the agenda, researched the new target segment (ironworkers), and refined the problem statement, value proposition, and elevator pitch.</li>
+        <li><strong>Mateusz:</strong> Worked on logo design concepts and user persona layout.</li>
+        <li><strong>Angel:</strong> Built the information architecture, site map, and low-fidelity wireframes for “Sleep Help,” “Breathing,” “Mental Health Home,” and “To-Do List” pages.</li>
+        <li><strong>Zinna:</strong> Researched APIs, tested API integration in Expo, and designed the happy path flow.</li>
+        <li><strong>All:</strong> Collaborated on the site map.</li>
       </ul>
   
       <h2>Wireframing & Design Feedback</h2>
-      <p>For onboarding, advisors expressed interest in push notifications to help them stay consistent despite their demanding work schedules.</p>
+      <p>For onboarding, advisors expressed interest in push notifications to help users stay consistent despite their demanding work schedules.</p>
       <p>For check-ins, our team’s discussion highlighted the importance of integrating the user’s work schedule to ensure a seamless experience. We plan to explore how frequently their shifts change and whether they use existing scheduling platforms. This will help us create a smoother flow. Additionally, by allowing users to log their daily tasks, our AI can suggest personalized stretches that match their specific activities.</p>
   
       <h2>Main Features</h2>
+      <p>Our current project scope feels realistic and achievable, focusing on these key areas:</p>
       <ul>
         <li>Daily check-ins</li>
         <li>Stretching support</li>
@@ -231,6 +232,32 @@ const posts = [
         <li><strong>Target Audience:</strong> Focus on ages 20–40. A younger focus may alienate the majority of the target users.</li>
         <li><strong>Community & Stigma:</strong> There’s less stigma around discussing physical pain—many trade workers already engage in wellness activities like the gym or meditation. Encourage using the app socially.</li>
       </ul>
+  
+      <h2>Oct 8th – Iron Worker Field Tour with Kenner, NE12 rm 101</h2>
+      <p><strong>Location:</strong> NE12</p>
+      <p><strong>Summary:</strong> We toured the NE12 site, where the Iron Workers operate, and had the opportunity to observe their work environment and daily tasks.</p>
+  
+      <h3>Key Learnings about Iron Workers</h3>
+      <ul>
+        <li><strong>Teamwork:</strong> Iron workers always work in pairs for safety and efficiency.</li>
+      </ul>
+  
+      <h4>Main Categories of Iron Work</h4>
+      <ul>
+        <li><strong>Structural Iron Work:</strong> Carry 50–60 lbs of steel tools on their belts while climbing, work with cranes to lift and position steel beams, and perform welding and torch cutting.</li>
+        <li><strong>Reinforcement (Rebar Work):</strong> Focus on reinforcing concrete structures with rebar, requiring constant attention to detail and safety.</li>
+        <li><strong>Ornamental Iron Work:</strong> Involves polishing and installing decorative or finishing metal pieces such as braces and railings.</li>
+      </ul>
+  
+      <h4>Common Injuries</h4>
+      <ul>
+        <li>Lower back pain – due to heavy lifting and repetitive motion.</li>
+        <li>Hand injuries – from handling steel and tools.</li>
+        <li>Eye injuries – from welding, cutting, and debris.</li>
+      </ul>
+  
+      <h4>Observations</h4>
+      <p>Iron workers perform many repetitive tasks, such as lifting and carrying steel on their shoulders, setting it down, and repeating the process throughout the day. The work is physically demanding and requires constant focus on safety and team coordination. The environment is very loud, and there are dangers everywhere.</p>
   
       <h2>Next Steps</h2>
       <ul>
@@ -268,6 +295,8 @@ const posts = [
     `,
     image: process.env.PUBLIC_URL + "/post-images/week5Image.png"
   }
+  
+ 
   
 ];
 
