@@ -5,6 +5,8 @@ import teamMembers from "./teamData";
 import PostCard from "./components/PostCard";
 import PostPage from "./components/PostPage";
 import TeamMember from "./components/TeamMember";
+import Gallery from "./components/Gallery"; 
+
 import "./App.css";
 
 function App() {
@@ -32,22 +34,7 @@ function App() {
             >
               About
             </a>
-            {/* <a 
-              href="#blog" 
-              className="nav-link"
-              onClick={(e) => {
-                e.preventDefault();
-                const element = document.querySelector('.post-list');
-                const elementPosition = element.offsetTop;
-                const offsetPosition = elementPosition - 200;
-                window.scrollTo({
-                  top: offsetPosition,
-                  behavior: 'smooth'
-                });
-              }}
-            >
-              Blog
-            </a> */}
+
             <a 
   href="#blog" 
   className="nav-link"
@@ -132,7 +119,9 @@ function App() {
           </div>
         </div>
       </section>
-      
+      <section>
+        <Gallery/>
+      </section>
       <Routes>
         <Route
           path="/"
@@ -159,6 +148,7 @@ function App() {
           </div>
         </div>
       </section>
+
     
       <footer>
         <div className="copyright">
