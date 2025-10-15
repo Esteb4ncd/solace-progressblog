@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 // Image objects with date and short caption
 const galleryItems = [
@@ -59,6 +59,7 @@ const formatDate = (isoDate) => {
 function Gallery() {
   const scrollRef = useRef(null);
   const isHovering = useRef(false);
+  const [selectedItem, setSelectedItem] = useState(null);
 
   // Horizontal auto-scroll loop
   useEffect(() => {
@@ -85,6 +86,15 @@ function Gallery() {
     scrollContainer.addEventListener("mouseleave", () => (isHovering.current = false));
 
     return () => cancelAnimationFrame(requestId);
+  }, []);
+
+  // Close on Escape
+  useEffect(() => {
+    const onKeyDown = (e) => {
+      if (e.key === "Escape") setSelectedItem(null);
+    };
+    window.addEventListener("keydown", onKeyDown);
+    return () => window.removeEventListener("keydown", onKeyDown);
   }, []);
 
   // Split images into 3 rows
@@ -149,6 +159,74 @@ function Gallery() {
         .image-container:hover .caption {
           opacity: 1;
         }
+
+        /* Modal styles */
+        .modal-overlay {
+          position: fixed;
+          inset: 0;
+          background: rgba(0,0,0,0.65);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          z-index: 9999;
+          padding: 16px;
+        }
+        .modal-content {
+          position: relative;
+          background: #0b0b0b;
+          border-radius: 12px;
+          max-width: 90vw;
+          max-height: 90vh;
+          overflow: hidden;
+          box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+          display: flex;
+          flex-direction: column;
+        }
+        .modal-media {
+          width: min(84vw, 960px);
+          height: min(65vh, 720px);
+          background: #111;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .modal-media img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+          background: #111;
+        }
+        .modal-meta {
+          padding: 12px 14px;
+          color: #f6f6f6;
+          display: flex;
+          flex-direction: column;
+          gap: 6px;
+          background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0));
+        }
+        .modal-date {
+          font-weight: 700;
+          font-size: 14px;
+        }
+        .modal-caption {
+          font-size: 14px;
+          opacity: 0.95;
+        }
+        .modal-close {
+          position: absolute;
+          top: 8px;
+          right: 8px;
+          border: none;
+          border-radius: 8px;
+          padding: 8px 10px;
+          background: rgba(0,0,0,0.6);
+          color: #fff;
+          cursor: pointer;
+          transition: background 0.2s ease;
+        }
+        .modal-close:hover {
+          background: rgba(0,0,0,0.8);
+        }
       `}</style>
 
       <div
@@ -165,7 +243,7 @@ function Gallery() {
         {rows.map((rowItems, rowIndex) => (
           <div key={rowIndex} style={{ display: "flex", gap: "12px" }}>
             {rowItems.map((item, index) => (
-              <div key={index} className="image-container">
+              <div key={index} className="image-container" onClick={() => setSelectedItem(item)}>
                 <img
                   src={item.src}
                   alt={`${item.caption} — ${formatDate(item.date)}`}
@@ -180,6 +258,21 @@ function Gallery() {
           </div>
         ))}
       </div>
+
+      {selectedItem && (
+        <div className="modal-overlay" onClick={() => setSelectedItem(null)}>
+          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+            <button className="modal-close" onClick={() => setSelectedItem(null)} aria-label="Close dialog">✕</button>
+            <div className="modal-media">
+              <img src={selectedItem.src} alt={`${selectedItem.caption} — ${formatDate(selectedItem.date)}`} />
+            </div>
+            <div className="modal-meta">
+              <div className="modal-date">{formatDate(selectedItem.date)}</div>
+              <div className="modal-caption">{selectedItem.caption}</div>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
