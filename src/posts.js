@@ -294,7 +294,92 @@ const posts = [
       <p class="signature">Thanks for reading my TED Talk,<br/><br/>— Rosie &amp; The Solace Team</p>
     `,
     image: process.env.PUBLIC_URL + "/post-images/week5Image.png"
+  },
+  {
+    id: 6,
+    header: "Week 6 Update: Refining Hi-Fi, Applying Feedback, and Preparing for User Testing",
+    date: "2025-10-15",
+    author: "Hyunjung Shin",
+    description: `
+      <h2>Introduction</h2>
+      <p>In Week 6, our team focused on refining our high-fidelity designs, applying mentor and advisor feedback, and preparing for upcoming user testing. The week was full of creative collaboration, detailed review, and meaningful progress across both design and development.</p>
+  
+      <h2>What We Did</h2>
+      <ul>
+        <li><strong>Sarah:</strong> Sketched the storyboard, researched the sleep API, and wrote user persona scenarios.</li>
+        <li><strong>Esteban:</strong> Created storyboard sketches, worked on the UI library, and reviewed and submitted the user persona rubric.</li>
+        <li><strong>Zinna:</strong> Sketched the storyboard and designed the breathing exercise function.</li>
+        <li><strong>Rosie:</strong> Developed the style guide, created storyboard sketches, and ideated and wireframed the AI push notification alarm screen.</li>
+        <li><strong>Rachel:</strong> Updated the color palette, added new colors to the style guide, created wireframes for the Settings page, Navigation flow, AI version onboarding, and Dissociate (completion) screen; designed and finalized the Settings section; built missing components; and contributed to storyboard ideation and sketches.</li>
+        <li><strong>Mateusz:</strong> Drew user persona scenario illustrations and developed mascot and logo concepts.</li>
+        <li><strong>Angel:</strong> Contributed to storyboard ideation, prototyping, AI screen ideation, and wireframed the Account page.</li>
+        <li><strong>All:</strong> Collaborated on the Advertisement Storyboards.</li>
+      </ul>
+  
+      <h2>Wireframing & Design Feedback</h2>
+      <p>Our team received valuable feedback on how to make our wireframes and overall design more cohesive and user-friendly. One of the main points was to improve the onboarding flow by adding a “Back” button on the final screen (“We’re all set”) and replacing the numerical step names like “Warm-up,” “2nd,” and “3rd” with more descriptive, non-numerical labels. These changes would make the onboarding experience smoother and more intuitive.</p>
+      <p>We also learned that our gamification elements could be clearer and more consistent across the app. Clarifying the XP logic and ensuring that all related visuals align would help users better understand how progress and rewards work. Adding a short tutorial or pop-up slides explaining how the mascot and XP system function could further enhance engagement.</p>
+      <p>Additionally, incorporating the user’s schedule into the home screen was highlighted as an important improvement. Showing upcoming exercises and related tasks directly on the main page will make the app better reflect the user’s daily routine. Linking exercise videos from the onboarding schedule screen will also help users start their routines more easily.</p>
+      <p>Although these changes haven’t been implemented yet, our team believes that applying this feedback will make the app more consistent, engaging, and aligned with user needs. We plan to integrate these updates in the next design iteration after user testing.</p>
+  
+      <h2>Main Features</h2>
+      <ul>
+        <li>Refine visual consistency and color palette across all screens.</li>
+        <li>Keep the mascot simple and meaningful—3D rendering isn’t necessary.</li>
+        <li>Have the mascot represent stretching or breathing exercises.</li>
+        <li>Reinforce schedule integration on the home screen as the app’s anchor.</li>
+        <li>Add visuals of targeted muscle groups for each exercise.</li>
+        <li>Display upcoming exercises or activities clearly within the schedule.</li>
+        <li>Ensure interactive elements are visually clear for intuitive navigation.</li>
+      </ul>
+  
+      <h2>Research & Analysis Feedback</h2>
+      <p>After reviewing feedback with Wim, we identified key ways to improve the depth and clarity of our research reports:</p>
+      <ul>
+        <li>Make the competitive analysis more specific and detailed, avoiding overly generic insights.</li>
+        <li>Expand the competitor list beyond 15 and organize findings into clear categories.</li>
+        <li>In user scenarios, focus on actual user workflows and real pain points instead of hypothetical app behavior.</li>
+        <li>Improve report readability by refining layout, spacing, and grouping related content together.</li>
+      </ul>
+  
+      <h2>Advisor Meeting with Kenner</h2>
+      <p>Our meeting with Kenner gave us valuable insights into how users interact with the current high-fidelity designs. We learned which elements are intuitive and engaging, and where usability could be improved. Highlights included the AI-assisted check-ins, relaxation features like white noise and breathing exercises, and flexible input options (typing and multiple selections). Users emphasized personalization options and the need for adaptable schedules to match varying work shifts.</p>
+      <h3>Key Takeaways</h3>
+      <ul>
+        <li>Users appreciated clear task structure but want multiple or typing options for daily reports.</li>
+        <li>Adding an “Enter” button would improve usability for AI-assisted inputs.</li>
+        <li>White noise and rain sounds were well received and should transition smoothly with exercises.</li>
+        <li>Home screen schedules should be flexible with customizable notifications.</li>
+        <li>Users expressed interest in personalizing their characters beyond the default mascot.</li>
+        <li>Overall, users found check-ins efficient, AI features valuable, and relaxation exercises engaging.</li>
+      </ul>
+  
+      <h2>Next Steps</h2>
+      <p>This week, our team focused on refining designs, finalizing assets, and preparing for prototyping and blog updates. The storyboard reel will be completed individually by Thursday, with Rachel drafting the next blog post.</p>
+      <h3>Design Team</h3>
+      <ul>
+        <li>Refine wireframes for consistency and visual alignment.</li>
+        <li>Fix onboarding flow and navigation clarity.</li>
+        <li>Update home and gamification screens for stronger cohesion.</li>
+        <li>Integrate Streak & Level indicators across all homepages (Physical, Mental, and Home).</li>
+        <li>Finalize mascot and logo concepts (Mateusz).</li>
+      </ul>
+  
+      <h3>Development Team</h3>
+      <ul>
+        <li><strong>Sarah:</strong> Assist with prototyping, edit blog UI with new brand colors, and create a static home screen.</li>
+        <li><strong>Esteban:</strong> Build landing page (login and signup) and implement multiple-choice onboarding.</li>
+        <li><strong>Zinna:</strong> Support prototyping, develop AI onboarding, and start logic for breathing exercises.</li>
+      </ul>
+  
+      <h2>Closing</h2>
+      <p>Week 6 was full of valuable feedback and actionable insights. With fresh Hi-Fi user testing feedback, mentor input, and advisor guidance, our team now has a clearer understanding of how to refine both functionality and visuals. Moving forward, we’re focused on improving onboarding, strengthening gamification, finalizing the mascot and logo, and preparing for our next round of user testing.</p>
+  
+      <p class="signature">Thanks for following our journey,<br/><br/>— Hyunjung &amp; The Solace Team</p>
+    `,
+    image: process.env.PUBLIC_URL + "/post-images/week6Image.png"
   }
+  
   
  
   
