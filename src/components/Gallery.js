@@ -42,9 +42,75 @@ const galleryItems = [
     caption: "Doodle boi close up",
     src: process.env.PUBLIC_URL + "/gallery-images/DSCN4348.JPG",
   },
+  {
+    date: "2025-10-10",
+    caption: "The team ideating",
+    src: process.env.PUBLIC_URL + "/gallery-images/DSCN4378.JPG",
+  },
+  {
+    date: "2025-10-10",
+    caption: "Team brainstorming ideas",
+    src: process.env.PUBLIC_URL + "/gallery-images/DSCN4379.JPG",
+  },
+  {
+    date: "2025-10-10",
+    caption: "Creative discussion in progress",
+    src: process.env.PUBLIC_URL + "/gallery-images/DSCN4380.JPG",
+  },
+  {
+    date: "2025-10-10",
+    caption: "Collaborative planning session",
+    src: process.env.PUBLIC_URL + "/gallery-images/DSCN4381.JPG",
+  },
+  {
+    date: "2025-10-10",
+    caption: "The team ideating together",
+    src: process.env.PUBLIC_URL + "/gallery-images/DSCN4382.JPG",
+  },
+  {
+    date: "2025-10-10",
+    caption: "Sketching out concepts",
+    src: process.env.PUBLIC_URL + "/gallery-images/DSCN4383.JPG",
+  },
+  {
+    date: "2025-10-10",
+    caption: "Exploring new design ideas",
+    src: process.env.PUBLIC_URL + "/gallery-images/DSCN4384.JPG",
+  },
+  {
+    date: "2025-10-10",
+    caption: "Team discussion and ideation",
+    src: process.env.PUBLIC_URL + "/gallery-images/DSCN4385.JPG",
+  },
+  {
+    date: "2025-10-10",
+    caption: "Brainstorming for Solace",
+    src: process.env.PUBLIC_URL + "/gallery-images/DSCN4387.JPG",
+  },
+  {
+    date: "2025-10-10",
+    caption: "Group collaboration session",
+    src: process.env.PUBLIC_URL + "/gallery-images/DSCN4389.JPG",
+  },
+  {
+    date: "2025-10-10",
+    caption: "Team refining concepts",
+    src: process.env.PUBLIC_URL + "/gallery-images/DSCN4391.JPG",
+  },
+  {
+    date: "2025-10-10",
+    caption: "Discussing new directions",
+    src: process.env.PUBLIC_URL + "/gallery-images/DSCN4393.JPG",
+  },
+  {
+    date: "2025-10-10",
+    caption: "Finalizing creative ideas",
+    src: process.env.PUBLIC_URL + "/gallery-images/DSCN4395.JPG",
+  },
 ];
 
-
+// ✅ Function to shuffle array
+const shuffleArray = (arr) => [...arr].sort(() => Math.random() - 0.5);
 
 const formatDate = (isoDate) => {
   const date = new Date(isoDate);
@@ -60,13 +126,19 @@ function Gallery() {
   const scrollRef = useRef(null);
   const isHovering = useRef(false);
   const [selectedItem, setSelectedItem] = useState(null);
+  const [shuffledItems, setShuffledItems] = useState([]);
+
+  // ✅ Shuffle images once when component mounts
+  useEffect(() => {
+    setShuffledItems(shuffleArray(galleryItems));
+  }, []);
 
   // Horizontal auto-scroll loop
   useEffect(() => {
     const scrollContainer = scrollRef.current;
     if (!scrollContainer) return;
 
-    const allItems = [...galleryItems, ...galleryItems]; // duplicate for seamless loop
+    const allItems = [...shuffledItems, ...shuffledItems];
     let speed = 1;
     let requestId;
 
@@ -86,7 +158,7 @@ function Gallery() {
     scrollContainer.addEventListener("mouseleave", () => (isHovering.current = false));
 
     return () => cancelAnimationFrame(requestId);
-  }, []);
+  }, [shuffledItems]);
 
   // Close on Escape
   useEffect(() => {
@@ -99,7 +171,7 @@ function Gallery() {
 
   // Split images into 3 rows
   const rows = [[], [], []];
-  const allItems = [...galleryItems, ...galleryItems];
+  const allItems = [...shuffledItems, ...shuffledItems];
   allItems.forEach((item, idx) => rows[idx % 3].push(item));
 
   return (
@@ -112,7 +184,6 @@ function Gallery() {
         boxSizing: "border-box",
       }}
     >
-      {/* CSS styles moved outside the render loop */}
       <style>{`
         .image-container {
           position: relative;
@@ -123,7 +194,6 @@ function Gallery() {
           overflow: hidden;
           cursor: pointer;
         }
-
         .image-container img {
           position: absolute;
           inset: 0;
@@ -134,7 +204,6 @@ function Gallery() {
           border-radius: 12px;
           transition: transform 0.5s ease;
         }
-
         .caption {
           position: absolute;
           inset: 0;
@@ -151,16 +220,12 @@ function Gallery() {
           z-index: 2;
           transition: opacity 0.5s ease;
         }
-
         .image-container:hover img {
           transform: scale(1.1);
         }
-
         .image-container:hover .caption {
           opacity: 1;
         }
-
-        /* Modal styles */
         .modal-overlay {
           position: fixed;
           inset: 0;
