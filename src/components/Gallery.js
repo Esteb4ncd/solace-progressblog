@@ -39,7 +39,7 @@ const galleryItems = [
   },
   {
     date: "2025-10-10",
-    caption: "Solace team when DigiCam",
+    caption: "Doodle boi close up",
     src: process.env.PUBLIC_URL + "/gallery-images/DSCN4348.JPG",
   },
 ];
