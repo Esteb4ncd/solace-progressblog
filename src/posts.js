@@ -377,7 +377,7 @@ const posts = [
   
       <p class="signature">Thanks for following our journey,<br/><br/>— Hyunjung &amp; The Solace Team</p>
     `,
-    image: process.env.PUBLIC_URL + "/post-images/week6Image.png"
+    image: process.env.PUBLIC_URL + "/post-images/week6Image.jpg"
   }
   
   
