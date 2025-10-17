@@ -94,7 +94,7 @@ const galleryItems = [
   },
   {
     date: "2025-10-10",
-    caption: "Team refining concepts",
+    caption: "From the trenches",
     src: process.env.PUBLIC_URL + "/gallery-images/DSCN4391.JPG",
   },
   {
