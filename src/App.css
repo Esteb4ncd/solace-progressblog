@@ -222,10 +222,24 @@ header {
 .about-description {
   font-size: 1.2rem;
   line-height: 1.7;
-  margin: 0 0 var(--spacing-2xl) 0;
+  margin: 0 0 var(--spacing-md) 0;
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.about-screens {
+  display: none;
+  justify-content: center;
+  margin: var(--spacing-xl) 0;
+}
+
+.screens-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  max-width: 800px;
 }
 
 .about-features {
@@ -699,11 +713,16 @@ footer .copyright {
     padding: 0 var(--spacing-md);
     max-width: 100%;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
   }
   
   .hero-logo {
-    height: 80px;
-    max-width: 400px;
+    height: 60px;
+    max-width: 300px;
   }
   
   .hero-content p {
@@ -727,6 +746,15 @@ footer .copyright {
   
   .about-description {
     font-size: 1.1rem;
+  }
+  
+  .about-screens {
+    display: flex;
+    margin: var(--spacing-lg) 0;
+  }
+  
+  .screens-image {
+    max-width: 90%;
   }
   
   .about-features {
@@ -855,6 +883,12 @@ footer .copyright {
   
   .hero-content {
     padding: 0 var(--spacing-sm);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
   }
   
   .hero-logo {
@@ -882,6 +916,16 @@ footer .copyright {
   
   .about-description {
     font-size: 1rem;
+    margin: 0 0 var(--spacing-xs) 0;
+  }
+  
+  .about-screens {
+    display: flex;
+    margin: var(--spacing-md) 0;
+  }
+  
+  .screens-image {
+    max-width: 95%;
   }
   
   .feature {

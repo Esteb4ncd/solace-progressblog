@@ -145,8 +145,16 @@ function App() {
         <div className="about-content">
           <h2>About Solace</h2>
           <p className="about-description">
-          Solace was built for the people who keep the skyline standing. Iron work is brutal on the body and the mind — but recovery shouldn’t feel impossible. We turn self-care into something simple, gamified, and built for your world — helping you trade pain for real progress.
+          Solace was built for the people who keep the skyline standing. Iron work is brutal on the body and the mind — but recovery shouldn't feel impossible. We turn self-care into something simple, gamified, and built for your world — helping you trade pain for real progress.
           </p>
+          <div className="about-screens">
+            <img 
+              src={process.env.PUBLIC_URL + "/Solace_Screens.png"} 
+              alt="Solace App Screenshots" 
+              className="screens-image"
+            />
+          </div>
+         
           <div className="about-features">
             <div className="feature">
               <h3>Gamified Recovery</h3>
