@@ -11,7 +11,7 @@ const teamMembers = [
   {
     id: 2,
     name: "Esteban Cruz D.",
-    projectRole: "Product Co-owner and Lead Developer",
+    projectRole: "Product Co-Owner and Lead Developer",
     personalStatement: "This is where I would share a bit about myself",
     linkedin: "https://linkedin.com/in/esteban-cd",
     profilePicture: process.env.PUBLIC_URL + "/post-images/catTest.png"
