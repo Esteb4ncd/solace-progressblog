@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
 import posts from "./posts";
 import teamMembers from "./teamData";
@@ -11,6 +11,19 @@ import "./App.css";
 
 function App() {
   const [showPopup, setShowPopup] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
+  // Check if screen is mobile size
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+    
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
 
   const handleSmileyClick = () => {
     setShowPopup(true);
@@ -95,7 +108,10 @@ function App() {
       </header>
       <section className="hero">
         <div className="hero-image">
-          <img src={process.env.PUBLIC_URL + "/SolaceHero_Blank.png"} alt="Team Solace Hero" />
+          <img 
+            src={process.env.PUBLIC_URL + (isMobile ? "/SolaceHero_Mobile.png" : "/SolaceHero_Blank.png")} 
+            alt="Team Solace Hero" 
+          />
         </div>
         <div className="hero-content">
           <svg className="hero-logo" viewBox="0 0 444.54 108" xmlns="http://www.w3.org/2000/svg">
