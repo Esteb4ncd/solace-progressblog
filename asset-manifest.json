@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/solace-progressblog/static/css/main.8a8a0ab7.css",
-    "main.js": "/solace-progressblog/static/js/main.988af6fd.js",
+    "main.css": "/solace-progressblog/static/css/main.133a45f6.css",
+    "main.js": "/solace-progressblog/static/js/main.f77c4606.js",
     "index.html": "/solace-progressblog/index.html",
-    "main.8a8a0ab7.css.map": "/solace-progressblog/static/css/main.8a8a0ab7.css.map",
-    "main.988af6fd.js.map": "/solace-progressblog/static/js/main.988af6fd.js.map"
+    "main.133a45f6.css.map": "/solace-progressblog/static/css/main.133a45f6.css.map",
+    "main.f77c4606.js.map": "/solace-progressblog/static/js/main.f77c4606.js.map"
   },
   "entrypoints": [
-    "static/css/main.8a8a0ab7.css",
-    "static/js/main.988af6fd.js"
+    "static/css/main.133a45f6.css",
+    "static/js/main.f77c4606.js"
   ]
 }
