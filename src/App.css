@@ -665,3 +665,305 @@ footer .copyright {
     transform: scale(1) translateY(0);
   }
 }
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+  /* Header adjustments */
+  .header-content {
+    padding: 0 var(--spacing-sm);
+    flex-direction: column;
+    gap: var(--spacing-sm);
+  }
+  
+  .logo-svg {
+    height: 35px;
+  }
+  
+  .main-nav {
+    gap: var(--spacing-md);
+  }
+  
+  .nav-link {
+    font-size: 1rem;
+    padding: var(--spacing-xs);
+  }
+  
+  /* Hero section adjustments */
+  .hero {
+    height: 500px;
+    padding: var(--spacing-md);
+  }
+  
+  .hero-content {
+    padding: 0 var(--spacing-md);
+    max-width: 100%;
+    text-align: center;
+  }
+  
+  .hero-logo {
+    height: 80px;
+    max-width: 400px;
+  }
+  
+  .hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: var(--spacing-md);
+  }
+  
+  .cta-button {
+    padding: var(--spacing-sm) var(--spacing-md);
+    font-size: 1rem;
+  }
+  
+  /* About section adjustments */
+  .about {
+    padding: var(--spacing-xl) var(--spacing-sm);
+  }
+  
+  .about-content h2 {
+    font-size: 2rem;
+  }
+  
+  .about-description {
+    font-size: 1.1rem;
+  }
+  
+  .about-features {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+  }
+  
+  .feature {
+    padding: var(--spacing-md);
+  }
+  
+  .feature h3 {
+    font-size: 1.3rem;
+  }
+  
+  /* Post list adjustments */
+  main.post-list {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+    padding: var(--spacing-lg) var(--spacing-sm);
+  }
+  
+  .post-card {
+    padding: var(--spacing-md);
+  }
+  
+  .post-card h2 {
+    font-size: 1.3rem;
+  }
+  
+  .post-card img {
+    height: 120px;
+  }
+  
+  /* Post page adjustments */
+  .post-page {
+    padding: var(--spacing-lg);
+    margin: var(--spacing-md) auto;
+  }
+  
+  .post-page h1 {
+    font-size: 2rem;
+  }
+  
+  .post-page h2 {
+    font-size: 1.5rem;
+  }
+  
+  .post-page p {
+    font-size: 1rem;
+  }
+  
+  /* Team section adjustments */
+  .team {
+    padding: var(--spacing-xl) var(--spacing-sm);
+  }
+  
+  .team-content h2 {
+    font-size: 2rem;
+  }
+  
+  .team-description {
+    font-size: 1.1rem;
+  }
+  
+  .team-row:first-child {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .team-row:last-child {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .member-photo {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .team-member h3 {
+    font-size: 1rem;
+  }
+  
+  /* Footer adjustments */
+  footer {
+    padding: var(--spacing-lg) var(--spacing-sm);
+  }
+  
+  /* Popup adjustments */
+  .popup-content {
+    padding: var(--spacing-lg);
+    max-width: 350px;
+  }
+  
+  .popup-image {
+    max-width: 150px;
+  }
+  
+  .popup-text {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Extra small mobile adjustments */
+  .header-content {
+    padding: 0 var(--spacing-xs);
+  }
+  
+  .logo-svg {
+    height: 30px;
+  }
+  
+  .main-nav {
+    gap: var(--spacing-sm);
+  }
+  
+  .nav-link {
+    font-size: 0.9rem;
+  }
+  
+  /* Hero section */
+  .hero {
+    height: 400px;
+    padding: var(--spacing-sm);
+  }
+  
+  .hero-content {
+    padding: 0 var(--spacing-sm);
+  }
+  
+  .hero-logo {
+    height: 60px;
+    max-width: 300px;
+  }
+  
+  .hero-content p {
+    font-size: 1.2rem;
+  }
+  
+  .cta-button {
+    padding: var(--spacing-xs) var(--spacing-sm);
+    font-size: 0.9rem;
+  }
+  
+  /* About section */
+  .about {
+    padding: var(--spacing-lg) var(--spacing-xs);
+  }
+  
+  .about-content h2 {
+    font-size: 1.8rem;
+  }
+  
+  .about-description {
+    font-size: 1rem;
+  }
+  
+  .feature {
+    padding: var(--spacing-sm);
+  }
+  
+  .feature h3 {
+    font-size: 1.2rem;
+  }
+  
+  /* Post list */
+  main.post-list {
+    padding: var(--spacing-md) var(--spacing-xs);
+  }
+  
+  .post-card {
+    padding: var(--spacing-sm);
+  }
+  
+  .post-card h2 {
+    font-size: 1.2rem;
+  }
+  
+  .post-card img {
+    height: 100px;
+  }
+  
+  /* Post page */
+  .post-page {
+    padding: var(--spacing-md);
+  }
+  
+  .post-page h1 {
+    font-size: 1.8rem;
+  }
+  
+  .post-page h2 {
+    font-size: 1.3rem;
+  }
+  
+  /* Team section */
+  .team {
+    padding: var(--spacing-lg) var(--spacing-xs);
+  }
+  
+  .team-content h2 {
+    font-size: 1.8rem;
+  }
+  
+  .team-description {
+    font-size: 1rem;
+  }
+  
+  .team-row:first-child,
+  .team-row:last-child {
+    grid-template-columns: 1fr;
+  }
+  
+  .member-photo {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .team-member h3 {
+    font-size: 0.9rem;
+  }
+  
+  /* Footer */
+  footer {
+    padding: var(--spacing-md) var(--spacing-xs);
+  }
+  
+  /* Popup */
+  .popup-content {
+    padding: var(--spacing-md);
+    max-width: 300px;
+  }
+  
+  .popup-image {
+    max-width: 120px;
+  }
+  
+  .popup-text {
+    font-size: 1.2rem;
+  }
+}

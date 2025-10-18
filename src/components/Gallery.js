@@ -292,6 +292,71 @@ function Gallery() {
         .modal-close:hover {
           background: rgba(0,0,0,0.8);
         }
+
+        /* Mobile responsive styles */
+        @media (max-width: 768px) {
+          .image-container {
+            width: 200px;
+            height: 120px;
+          }
+          
+          .modal-overlay {
+            padding: 8px;
+          }
+          
+          .modal-content {
+            max-width: 95vw;
+            max-height: 95vh;
+          }
+          
+          .modal-media {
+            width: min(90vw, 400px);
+            height: min(60vh, 400px);
+          }
+          
+          .modal-meta {
+            padding: 10px 12px;
+          }
+          
+          .modal-date {
+            font-size: 13px;
+          }
+          
+          .modal-caption {
+            font-size: 13px;
+          }
+          
+          .modal-close {
+            top: 6px;
+            right: 6px;
+            padding: 6px 8px;
+            font-size: 14px;
+          }
+        }
+
+        @media (max-width: 480px) {
+          .image-container {
+            width: 150px;
+            height: 100px;
+          }
+          
+          .modal-media {
+            width: min(95vw, 300px);
+            height: min(55vh, 300px);
+          }
+          
+          .modal-meta {
+            padding: 8px 10px;
+          }
+          
+          .modal-date {
+            font-size: 12px;
+          }
+          
+          .modal-caption {
+            font-size: 12px;
+          }
+        }
       `}</style>
 
       <div
