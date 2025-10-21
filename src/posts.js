@@ -378,7 +378,84 @@ const posts = [
       <p class="signature">Thanks for following our journey,<br/><br/>— Hyunjung &amp; The Solace Team</p>
     `,
     image: process.env.PUBLIC_URL + "/post-images/week6Image.JPG"
+  },
+  {
+    id: 7,
+    header: "Week 7 Update: Storyboarding, Prototyping, and Midterm Prep",
+    date: "2025-10-21",
+    author: "Angel Hsieh",
+    description: `
+      <h2>Introduction</h2>
+      <p>Week 7 was all about refining our user experience, advancing our prototypes, and preparing for the midterm storytelling presentation. The team made major strides on storyboards, high-fidelity design, onboarding flows, and live demo prep. Alongside coding and UI development, we focused on consistency, user testing, and connecting all parts of the product into a cohesive narrative.</p>
+  
+      <h2>What We Did</h2>
+      <ul>
+        <li><strong>Sarah:</strong> Worked on static home page coding, UI front-end for the blog, onboarding wireframes, and the storyboard for the presentation.</li>
+        <li><strong>Mat:</strong> Focused on the storyboard and polishing the logo and mascot.</li>
+        <li><strong>Rosie:</strong> Built a hi-fi version of the design, prototyped, and contributed to the storyboard.</li>
+        <li><strong>Rachel:</strong> Updated the blog post, combined the storyboard with voiceover, recorded the voiceover, created an individual storyboard, and worked on hi-fi design and prototyping.</li>
+        <li><strong>Angel:</strong> Concentrated on prototyping, wireframing, storyboard montage creation, consistency checks, and started the user testing flow.</li>
+        <li><strong>Esteban:</strong> Downloaded and tested a UI library, created the LargeButton component, coded onboarding screens, worked on media queries for mobile blog progress, updated voiceovers, and pushed Hyungjung’s blog post.</li>
+        <li><strong>Zinna:</strong> Coded the login, sign-in, and tutorial pages while updating storyboard sketches.</li>
+      </ul>
+  
+      <h2>Midterm Criteria & Focus</h2>
+      <ul>
+        <li><strong>Product Ideation & Value Proposition:</strong> Sarah</li>
+        <li><strong>Design Choices:</strong> Designers (teamwide effort)</li>
+        <li><strong>Storytelling & Future Prospects:</strong> Already outlined, just fine-tuning</li>
+      </ul>
+  
+      <h2>New User Flow (Live Demo Goal)</h2>
+      <p>Sign-up → Tutorial → Onboarding (optional skip) → Home → Individual Physical → Watch Video → Finish Exercise Screen → Home → Mental → Breathing Exercise → Complete Mental → Home</p>
+  
+      <h2>Onboarding & Physical Section Updates</h2>
+      <ul>
+        <li>Sign-up now includes a fake typing animation, with working email + password input.</li>
+        <li>After finishing a physical video, users are redirected to Home (no “Watch Again” button).</li>
+        <li>Completed exercises on Home are crossed off.</li>
+        <li>Users can earn 1 XP per exercise.</li>
+        <li>A completion screen is needed for each physical exercise.</li>
+        <li>Individual physical video card layouts now match the individual view.</li>
+      </ul>
+  
+      <h2>Midterm Presentation Roles</h2>
+      <ul>
+        <li><strong>User Persona:</strong> Esteban</li>
+        <li><strong>Mascot:</strong> Mat (with sound effect: “Congrats! You earn more XP”)</li>
+        <li><strong>Design Narrator:</strong> Angel</li>
+      </ul>
+  
+      <h2>Storytelling Outline</h2>
+      <ul>
+        <li><strong>Intro: Problem:</strong> Zinna</li>
+        <li><strong>Value Proposition:</strong> Rachel</li>
+        <li><strong>Solution:</strong> Rosie</li>
+        <li><strong>Unique Features & Demo:</strong> Esteban (Ironworker) & Mat (Mascot)</li>
+        <li><strong>Design Narration:</strong> Angel</li>
+        <li><strong>Future Roadmap & Potential Features:</strong> Sarah</li>
+        <li><strong>Conclusion:</strong> Sarah</li>
+      </ul>
+  
+      <h2>Timeline & Next Steps</h2>
+      <ul>
+        <li>Storyboard done by Thursday, Oct 23</li>
+        <li>Storytelling Presentation & Friday Meeting – Oct 24</li>
+        <li>Script finalized – Friday after Storytelling class</li>
+        <li>Practice reading script over the weekend (Zoom meeting for 10 mins)</li>
+        <li>Slides design using brand colors and visuals – team members to complete their parts</li>
+        <li>Blog post – Angel</li>
+        <li>Next week, Kenner + 2 students will conduct user testing</li>
+      </ul>
+  
+      <h2>Closing</h2>
+      <p>Week 7 reinforced our focus on polishing the user experience, prototyping, and storytelling for the midterm. With hi-fi designs, storyboards, and a live demo flow in place, we’re on track to showcase a clear, engaging, and bug-free product demo next week.</p>
+  
+      <p class="signature">I’ve never wanted to git myself so much<br/><br/>We’ve never been saner!<br/><br/>— Angel &amp; The Solace Team</p>
+    `,
+    image: process.env.PUBLIC_URL + "/post-images/week7Image.png"
   }
+  
   
   
  
