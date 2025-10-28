@@ -454,7 +454,73 @@ const posts = [
       <p class="signature">I’ve never wanted to git myself so much<br/><br/>We’ve never been saner!<br/><br/>— Angel &amp; The Solace Team</p>
     `,
     image: process.env.PUBLIC_URL + "/post-images/week7Image.png"
+  },
+  {
+    id: 8,
+    header: "Week 8 Update: Storyboards, Sprints, and Midterm Magic!",
+    date: "2025-10-31",
+    author: "Sarah Wang",
+    description: `
+      <h2>Introduction</h2>
+      <p>Week 8 was all about refining, rehearsing, and presenting. With our midterm approaching, the Solace team came together to tighten every detail—from design polish and live demo functionality to storytelling and presentation flow. The result? A huge step forward in bringing Solace’s vision to life with both creativity and precision.</p>
+  
+      <h2>What We Did</h2>
+      <ul>
+        <li><strong>Rosie:</strong> Set up the sprint, edited the storyboard reel, prepared for the midterm presentation, and refined the hi-fi design to align perfectly with the presentation visuals.</li>
+        <li><strong>Esteban:</strong> Delegated development tasks, merged all onboarding branches, and fixed bugs across the entire onboarding process. He also made the edit-name feature functional on the homepage, matched onboarding with the new design (including animations), and coded the mental and physical homepages. Alongside Matt and Angel, he co-wrote the live demo script and presented the storyboard with Sarah.</li>
+        <li><strong>Sarah:</strong> Created the midterm presentation file and wrote the script for the problem statement, future roadmap, and the conclusion. She coded the full physical exercise flow, and updated both mental and physical flows to use consistent components. She fixed multiple bugs, presented Solace at BCIT’s Celebration of Impact event, and co-wrote and co-presented the storyboard reel with Esteban. She also planned out the weekly meeting’s agenda and led the meeting.</li>
+        <li><strong>Hyunjung:</strong> Enhanced the storyboard video by adding music and combining scenes, finalized the hi-fi presentation version, created presentation slides, and practiced her section on the Value Proposition. She also reviewed the storyboard for needed improvements.</li>
+        <li><strong>Mateusz:</strong> Helped finalize the midterm presentation script, practiced with the team, and worked on the video replay wireframes for the hi-fi prototype.</li>
+        <li><strong>Zinna:</strong> Coded the breathing exercise flow, refined the breathing cycles, and contributed to the storyboard and midterm presentation.</li>
+        <li><strong>Angel:</strong> Worked on the midterm presentation script, storyboard, and wireframe fixes, ensuring design consistency throughout the demo and visuals. She also wrote last week’s blog post.</li>
+      </ul>
+  
+      <h2>Next Sprint</h2>
+      <p><strong>Blog Post:</strong> Sarah</p>
+  
+      <h3>Storyboard Updates (Due Wednesday):</h3>
+      <ul>
+        <li>Add facial expressions and match scene transitions</li>
+        <li>Add transition cuts, detailed sound, setting, and dialogue</li>
+        <li>Apply the Solly mascot (as discussed in class)</li>
+        <li>Everyone searches for an affordable Solly costume</li>
+      </ul>
+  
+      <h3>Props Needed:</h3>
+      <ul>
+        <li>Wired headphones – Angel & Sarah</li>
+        <li>Pill bottles – Angel & Sarah</li>
+      </ul>
+  
+      <h3>Design Adjustments:</h3>
+      <ul>
+        <li>Change character colors for distinction</li>
+        <li><strong>Sarah:</strong> Change background to a yoga studio</li>
+        <li><strong>Zinna:</strong> Add transition screen; remove chair (character sits on rock)</li>
+        <li><strong>S3–4:</strong> Add more people and remove chair</li>
+        <li><strong>S2–4:</strong> Add pain points and expressions</li>
+        <li><strong>S5:</strong> Add wall transition screen</li>
+        <li><strong>Angel:</strong> Plan montage sequence and draft user testing questions for Kenner</li>
+        <li><strong>S6:</strong> Update phone screen visuals to match actual app UI</li>
+      </ul>
+  
+      <h2>User Testing</h2>
+      <p>Next week, the designers will focus on user testing with Jenny:</p>
+      <ul>
+        <li>Each designer will conduct one user test</li>
+        <li>All results will be reviewed in a designers’ meeting to apply improvements</li>
+        <li><strong>Angel:</strong> Write the user testing script</li>
+      </ul>
+      <p><strong>Developers:</strong> Updating AI code and developing more static screens.</p>
+  
+      <h2>Closing</h2>
+      <p>Week 8 marked a pivotal moment for the Solace team as we brought our ideas to life through our midterm presentation. With strong collaboration between design and development, we successfully showcased our progress while identifying key areas for refinement. Moving forward, our focus will shift toward polishing the storyboard, integrating the mascot, and enhancing user testing to ensure Solace delivers a seamless and meaningful experience for our users.</p>
+  
+      <p class="signature">Testing our patience more than our features,<br/><br/>— Sarah &amp; The Solace Team</p>
+    `,
+    image: process.env.PUBLIC_URL + "/post-images/week8Image.png"
   }
+  
   
   
   
