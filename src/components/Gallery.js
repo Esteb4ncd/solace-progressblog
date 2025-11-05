@@ -107,6 +107,11 @@ const galleryItems = [
     caption: "Finalizing creative ideas",
     src: process.env.PUBLIC_URL + "/gallery-images/DSCN4395.JPG",
   },
+  {
+    date: "2025-10-29",
+    caption: "Midterm presentation day!",
+    src: process.env.PUBLIC_URL + "/gallery-images/week8Image.JPG",
+  }
 ];
 
 // ✅ Function to shuffle array

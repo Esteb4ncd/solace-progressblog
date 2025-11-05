@@ -518,8 +518,63 @@ const posts = [
   
       <p class="signature">Testing our patience more than our features,<br/><br/>— Sarah &amp; The Solace Team</p>
     `,
-    image: process.env.PUBLIC_URL + "/post-images/week8Image.png"
+    image: process.env.PUBLIC_URL + "/post-images/week8Image.JPG"
+  },
+  {
+    id: 9,
+    header: "Week 9 Update: Polishing, Printing, and Production",
+    date: "2025-11-05",
+    author: "Esteban Cruz",
+    description: `
+      <h2>Introduction</h2>
+      <p>Week 9 pushed Solace further into refinement and production. With storyboard filming underway, fresh rounds of user testing completed, and continued UI consistency improvements across the app, the project is transitioning from prototype to presentation-ready. This sprint also introduced decisions around our printed promotional materials, giving Solace a physical presence beyond the screen.</p>
+  
+      <h2>UI and Design Improvements</h2>
+      <ul>
+        <li><strong>Rosie:</strong> Updated storyboard scene 4, addressed onboarding prototype issues, and created a UI/UX feedback document to streamline communication.</li>
+        <li><strong>Hyunjung:</strong> Applied feedback across multiple flows, including account settings adjustments, onboarding category separation, and upgraded card designs.</li>
+        <li><strong>Angel:</strong> Performed consistency checks to standardize button sizes, spacing, and typographic hierarchy, while progressing through prototyping evaluation.</li>
+        <li><strong>Rachel:</strong> Prepared motion graphics for the storyboard’s ending, sourced appropriate sound, and adjusted setting card sizing to support an About Us section.</li>
+        <li><strong>Mateusz:</strong> Continued developing Solly mascot variations, favicons, and gradient shading, contributing to the evolving visual language.</li>
+      </ul>
+  
+      <h2>User Testing and Feedback</h2>
+      <p>This week included testing with advisors and external users, providing insight into comfort, pacing, and clarity of the wellness flows. The breathing exercise was reverted back to four cycles after feedback on timing. Pop notification behavior was tested for responsiveness and tone, improving how Solace communicates progress and encouragement.</p>
+  
+      <h2>Printed Material Ideation</h2>
+      <ul>
+        <li>Pull-down mascot stretch brochure</li>
+        <li>Bookmark-style business cards</li>
+        <li>Stress balls</li>
+      </ul>
+      <p>Secondary options such as stickers, pins or magnets, and mini decorative Sollys will supplement the booth with additional brand touchpoints.</p>
+  
+      <h2>Storyboards and Production</h2>
+      <p>Filming continued this week, with several scenes shot or re-shot to improve audio quality and pacing. Earlier in the week, background ambience was recorded in NE12, providing authentic atmospheric sound for the promotional ad. With new footage captured, editing and motion graphics integration will progress into the next sprint.</p>
+  
+      <h2>Sprint Agenda</h2>
+      <ul>
+        <li>Stand-up updates</li>
+        <li>Printed materials voting</li>
+        <li>Feature update briefs from designers</li>
+        <li>Roadmap review</li>
+        <li>Open floor discussion</li>
+        <li>Next sprint assignments</li>
+      </ul>
+      <p>With presentation day approaching, flow alignment and printed assets became primary priorities.</p>
+  
+      <h2>Looking Ahead</h2>
+      <p>For the next sprint, everyone will prepare the presentation flow and continue work on printed deliverables. Designers will refine wireframe layouts and update the style guide, while developers will integrate those changes into the app. Additional responsibilities include onboarding UI adjustments, homepage logic, promotional website work, and continued audio editing. The team will be presenting in coordinated purple hoodies to reinforce visual identity on the final day.</p>
+  
+      <h2>Closing</h2>
+      <p>Week 9 shifted focus toward detail: layout precision, component cleanup, user feedback integration, and physical brand materials. With momentum building, Solace is moving steadily toward its final presentation, supported by a more polished experience and a clearer sense of identity.</p>
+  
+      <p class="signature">Going offline before I say something I’ll have to edit later,<br/><br/>— Esteban &amp; The Solace Team</p>
+    `,
+    image: process.env.PUBLIC_URL + "/post-images/week9Image.JPG"
   }
+  
+  
   
   
   
